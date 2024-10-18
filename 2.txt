@@ -1,0 +1,160 @@
+-- Active: 1724344258091@@127.0.0.1@1433@CARTAO_NOVO@dbo
+
+
+INSERT INTO
+dbo.TIPO(CODIGO, TIPO)
+VALUES
+('', 'TITULAR'),
+('', 'DEPENDENTE'),
+('', 'REPRESENTANDE'),
+('', 'AMIGO DO CARTÃO');
+
+-- ------------------------------------------------------------------
+
+INSERT INTO
+dbo.EMPRESA_PARCERIA(CODIGO, EMPRESA)
+VALUES
+('', 'FECOMÉRCIO'),
+('', 'SENAC'),
+('', 'SESC'),
+('', 'SINDCOM JABOATÃO'),
+('', 'SINDILOJAS CARUARU');
+
+-- ------------------------------------------------------------------
+
+INSERT INTO
+dbo.GRAU_PARENTESCO(CODIGO, DESCRICAO)
+VALUES
+('', 'CÔNJUGE/COMPANHEIRO(A)'),
+('', 'FILHO(A)/ENTEADO(A)'),
+('', 'MÃE/MADRASTA'),
+('', 'PAI/PADRASTO');
+
+-- ------------------------------------------------------------------
+
+INSERT INTO
+dbo.SITUACAO(CODIGO, DESCRICAO)
+VALUES
+('', 'AGUARDANDO PAGAMENTO'),
+('', 'ATIVO'),
+('', 'INATIVO'),
+('', 'NÃO POSSUI INTERESSE'),
+('', 'EXPIRADO');
+
+
+-- ------------------------------------------------------------------
+
+INSERT INTO
+[CARTAO_NOVO].[dbo].[SOLICITACAO_STATUS](CODIGO, DESCRICAO)
+VALUES
+('', 'ABERTO'),
+('', 'EM ANÁLISE'),
+('', 'ACEITO'),
+('', 'CANCELADO'),
+('', 'ENTREGUE'),
+('', 'RECUSADO');
+
+-- ------------------------------------------------------------------
+
+INSERT INTO
+[CARTAO_NOVO].[dbo].[PONTO_VALOR](CODIGO, DESCRICAO, VALOR)
+VALUES
+('', 'VALOR POR CADA PONTO', 1 );
+
+-- ------------------------------------------------------------------
+
+INSERT INTO
+[CARTAO_NOVO].[dbo].[PERFIL](CODIGO, DESCRICAO)
+VALUES
+('', 'ADMINISTRADOR'),
+('', 'CADASTRO DE USUARIO'),
+('', 'ATENDIMENTO'),
+('', 'FINANCEIRO'),
+('', 'API');
+
+-- ------------------------------------------------------------------
+
+INSERT INTO
+[CARTAO_NOVO].[dbo].[PREMIOS](CODIGO, DESCRICAO, QTD_PONTOS, URL_TERMOS)
+VALUES
+('', 'SESC LAZER', '10', 'https://www.cartaodoempresario.com.br/assets/termos/01-05-pontos-sesc-lazer.pdf'),
+('', 'HOTEL SESC', '10', 'https://www.cartaodoempresario.com.br/assets/termos/02-10-pontos-hotel-sesc.pdf'),
+('', 'ESCOVA SECADORA', '15', 'https://www.cartaodoempresario.com.br/assets/termos/17-15-pontos-escova.pdf'),
+('', 'FONE DE OUVIDO BLUETOOTH', '15', 'https://www.cartaodoempresario.com.br/assets/termos/18-15-pontos-fone.pdf'),
+('', 'BARBEADOR PHILLIPS', '15', 'https://www.cartaodoempresario.com.br/assets/termos/19-15-pontos-barbeador.pdf'),
+('', 'VENTILADOR', '15', 'https://www.cartaodoempresario.com.br/assets/termos/20-15-pontos-ventilador.pdf'),
+('', 'DIA DE BELEZA', '20', 'https://www.cartaodoempresario.com.br/assets/termos/04-25-pontos-salao.pdf'),
+('', 'FRITADEIRA ELÉTRICA SEM ÓLEO', '20', 'https://www.cartaodoempresario.com.br/assets/termos/16-20-pontos-fritadeira.pdf'),
+('', 'ASSISTENTE VIRTUAL ALEXA', '35', 'https://www.cartaodoempresario.com.br/assets/termos/03-15-pontos-alexa.pdf'),
+('', 'CAIXA DE SOM JBL', '35', 'https://www.cartaodoempresario.com.br/assets/termos/05-252-pontos-flip.pdf'),
+('', 'BICICLETA', '40', 'https://www.cartaodoempresario.com.br/assets/termos/08-40-pontos-bicicleta.pdf'),
+('', 'HOSPEDAGEM FIM DE SEMANA - HOTEL SESC GARANHUNS, GUADALUPE OU TRIUNFO', '45', 'https://www.cartaodoempresario.com.br/assets/termos/06-20-pontos-hotel-sesc.pdf'),
+('', 'HOSPEDAGEM DE UMA SEMANA - HOTEL SESC, GARANHUNS OU TRIUNFO', '50', 'https://www.cartaodoempresario.com.br/assets/termos/09-50-pontos-hotel-sesc.pdf'),
+('', 'UM SEMESTRE DE AULAS NO CURSO DE IDIOMAS DO SENAC PERNAMBUCO', '90', 'https://www.cartaodoempresario.com.br/assets/termos/07-30-pontos-ingles-senac.pdf'),
+('', 'HOSPEDAGEM DE FINAL DE SEMANA - PORTAL DE GRAVATÁ', '90', 'https://www.cartaodoempresario.com.br/assets/termos/10-110-pontos-portal-gravata.pdf'),
+('', 'SMARTWATCH SAMSUNG GALAXYWATCH4 OU SIMILAR', '100', 'https://www.cartaodoempresario.com.br/assets/termos/11-110-pontos-smartwatch.pdf'),
+('', 'SMARTTV LED 43"', '140', 'https://www.cartaodoempresario.com.br/assets/termos/12-140-pontos-tv.pdf'),
+('', 'NOTEBOOK DELL OU DE MARCA SIMILAR 14" CORE I3', '175', 'https://www.cartaodoempresario.com.br/assets/termos/13-160-pontos-notebook.pdf'),
+('', 'APARELHO CELULAR APPLE IPHONE 14 128GB', '250', 'https://www.cartaodoempresario.com.br/assets/termos/14-200-pontos-iphone.pdf'),
+('', 'MOTO HONDA CG 160 START', '800', 'https://www.cartaodoempresario.com.br/assets/termos/15-500-pontos-motocicleta.pdf');
+
+
+-- ------------------------------------------------------------------
+INSERT INTO CARTAO_NOVO.DBO.TERMOS (CODIGO, TERMO)
+VALUES 
+('', 'DECLARO A VERACIDADE E RESPONSABILIDADE PELAS INFORMAÇÕES FORNECIDAS E CONCORDO COM OS  TERMOS DE USO E CONDIÇÕES DE CONTRATAÇÃO DO CARTÃO DO EMPRESÁRIO E CONCORDO COM O  REGULAMENTO DO CARTÃO DO EMPRESÁRIO.')
+,('', 'CONCORDO COM A POLÍTICA DE PRIVACIDADE')
+,('', 'CONCORDO COM O COMPARTILHAMENTO DOS MEUS DADOS PESSOAIS E EMPRESARIAIS COM O SESC, SENAC E AS EMPRESAS PARCEIRAS DO CARTÃO DO EMPRESÁRIO.')
+,('', 'DECLARO QUE LI E ACEITO O REGULAMENTO DO PROGRAMA AMIGO DO CARTÃO DO EMPRESÁRIO DA FECOMÉRCIO PE.')
+
+
+-- INSERT ENUM VALORES
+INSERT INTO VALORES(DESCRICAO, VALOR)
+VALUES
+	('VALOR TITULAR','269.1'),
+	('VALOR TITULAR','149.5'),
+	('VALOR TITULAR','150'),
+	('VALOR TITULAR','179.4'),
+	('VALOR TITULAR','149.9'),
+	('VALOR TITULAR','250'),
+	('VALOR TITULAR','209.3');
+
+INSERT INTO VALORES(DESCRICAO, VALOR)
+VALUES 
+	('VALOR DEPENDENTE','39.9'),
+	('VALOR DEPENDENTE','14.9');
+
+INSERT INTO VALORES(DESCRICAO, VALOR)
+VALUES
+	('VALOR RENOVAÇÃO','149.5'),
+	('VALOR RENOVAÇÃO','149.9'),
+	('VALOR RENOVAÇÃO','179.4'),
+	('VALOR RENOVAÇÃO','269.1'),
+	('VALOR RENOVAÇÃO','299');
+
+INSERT INTO VALORES(DESCRICAO, VALOR)
+VALUES
+	('VALOR RENOVAÇÃO DEPENDENTE','39.9')
+
+-- ------------------------------------------------------------------
+
+-- ------------------------------------------------------------------
+
+-- ------------------------------------------------------------------
+
+-- ------------------------------------------------------------------
+
+-- ------------------------------------------------------------------
+
+-- ------------------------------------------------------------------
+
+-- ------------------------------------------------------------------
+
+
+
+
+
+
+
+
+

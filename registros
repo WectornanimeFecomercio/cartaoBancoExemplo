@@ -1,0 +1,138 @@
+-- Active: 1724344258091@@127.0.0.1@1433@CARTAO_NOVO@dbo
+INSERT INTO dbo.PESSOA (CODIGO, NOME, CPF, NASCIMENTO, GENERO, ESTADO_CIVIL_ID, NACIONALIDADE, NATURALIDADE)
+VALUES
+('P001', 'Ana Silva', '12345678901', '1990-05-15', 'F', 1, 'Brasileira', 'São Paulo'),
+('P002', 'Bruno Santos', '23456789012', '1985-07-20', 'M', 2, 'Brasileira', 'Rio de Janeiro'),
+('P003', 'Carla Oliveira', '34567890123', '1992-09-10', 'F', 1, 'Brasileira', 'Belo Horizonte'),
+('P004', 'Daniel Costa', '45678901234', '1988-12-30', 'M', 3, 'Brasileira', 'Curitiba'),
+('P005', 'Elisa Pereira', '56789012345', '1995-03-05', 'F', 1, 'Brasileira', 'Salvador'),
+('P006', 'Fernando Almeida', '67890123456', '1980-01-25', 'M', 2, 'Brasileira', 'Fortaleza'),
+('P007', 'Gabriela Ferreira', '78901234567', '1993-11-15', 'F', 1, 'Brasileira', 'Porto Alegre'),
+('P008', 'Henrique Rocha', '89012345678', '1987-06-22', 'M', 2, 'Brasileira', 'Manaus'),
+('P009', 'Isabela Lima', '90123456789', '1994-08-10', 'F', 1, 'Brasileira', 'Brasília'),
+('P010', 'João Mendes', '01234567890', '1989-10-01', 'M', 3, 'Brasileira', 'Recife'),
+('P011', 'Karen Martins', '12345678902', '1996-04-17', 'F', 1, 'Brasileira', 'Vitória'),
+('P012', 'Lucas Souza', '23456789013', '1983-02-20', 'M', 2, 'Brasileira', 'Goiânia'),
+('P013', 'Mariana Alves', '34567890124', '1991-09-05', 'F', 1, 'Brasileira', 'Natal'),
+('P014', 'Nicolas Lima', '45678901235', '1990-12-12', 'M', 3, 'Brasileira', 'Florianópolis'),
+('P015', 'Olivia Santos', '56789012346', '1994-07-30', 'F', 1, 'Brasileira', 'Maceió'),
+('P016', 'Paulo Ribeiro', '67890123457', '1986-11-18', 'M', 2, 'Brasileira', 'Cuiabá'),
+('P017', 'Quiteria Soares', '78901234568', '1992-03-25', 'F', 1, 'Brasileira', 'Belém'),
+('P018', 'Roberto Lima', '89012345679', '1984-05-14', 'M', 2, 'Brasileira', 'João Pessoa'),
+('P019', 'Sofia Cardoso', '90123456780', '1995-08-11', 'F', 1, 'Brasileira', 'Aracaju'),
+('P020', 'Thiago Dias', '01234567891', '1981-02-09', 'M', 3, 'Brasileira', 'Teresina');
+
+--------
+
+INSERT INTO dbo.ENDERECO (CODIGO, ENDERECO, BAIRRO, CIDADE, UF, CEP, COMPLEMENTO, NUMERO, LATITUDE, LONGITUDE)
+VALUES
+('E001', 'Rua das Flores', 'Centro', 'São Paulo', 'SP', '01000-000', 'Apt 101', '100', '23.5505', '-46.6333'),
+('E002', 'Avenida Brasil', 'Copacabana', 'Rio de Janeiro', 'RJ', '22000-000', 'Apt 202', '200', '22.9711', '-43.1822'),
+('E003', 'Rua dos Limoeiros', 'Funcionários', 'Belo Horizonte', 'MG', '30100-000', NULL, '300', '-19.9206', '-43.9377'),
+('E004', 'Praça Osório', 'Centro', 'Curitiba', 'PR', '80000-000', NULL, '400', '-25.4284', '-49.2733'),
+('E005', 'Rua da Paz', 'Pituba', 'Salvador', 'BA', '41810-000', 'Casa 5', '500', '-12.9711', '-38.5014'),
+('E006', 'Avenida Domingos Olímpio', 'Aldeota', 'Fortaleza', 'CE', '60100-000', 'Apt 12', '600', '-3.7172', '-38.5433'),
+('E007', 'Rua dos Açores', 'Moinhos de Vento', 'Porto Alegre', 'RS', '90000-000', NULL, '700', '-30.0277', '-51.2287'),
+('E008', 'Rua do Comércio', 'Centro', 'Manaus', 'AM', '69000-000', NULL, '800', '-3.1342', '-60.0217'),
+('E009', 'Rua da Liberdade', 'Asa Sul', 'Brasília', 'DF', '70000-000', NULL, '900', '-15.7801', '-47.9292'),
+('E010', 'Rua Nova', 'Boa Viagem', 'Recife', 'PE', '51000-000', NULL, '1000', '-8.0722', '-34.8951'),
+('E011', 'Rua de São Paulo', 'Centro', 'Vitória', 'ES', '29000-000', NULL, '1100', '-20.3155', '-40.3128'),
+('E012', 'Avenida Goiás', 'Setor Central', 'Goiânia', 'GO', '74000-000', NULL, '1200', '-16.6864', '-49.2648'),
+('E013', 'Rua do Sol', 'Cidade Alta', 'Natal', 'RN', '59000-000', NULL, '1300', '-5.7945', '-35.2110'),
+('E014', 'Rua das Acácias', 'Centro', 'Florianópolis', 'SC', '88000-000', NULL, '1400', '-27.5954', '-48.5480'),
+('E015', 'Avenida Alagoas', 'Centro', 'Maceió', 'AL', '57000-000', NULL, '1500', '-9.6659', '-35.7350'),
+('E016', 'Rua das Andorinhas', 'Centro', 'Cuiabá', 'MT', '78000-000', NULL, '1600', '-15.6010', '-56.0979'),
+('E017', 'Avenida Belém', 'Castanheira', 'Belém', 'PA', '66000-000', NULL, '1700', '-1.4558', '-48.5039'),
+('E018', 'Rua do Brás', 'Tambaú', 'João Pessoa', 'PB', '58000-000', NULL, '1800', '-7.1154', '-34.8631'),
+('E019', 'Rua da Esperança', 'Salgado', 'Aracaju', 'SE', '49000-000', NULL, '1900', '-10.9472', '-37.0731'),
+('E020', 'Rua da Luz', 'Centro', 'Teresina', 'PI', '64000-000', NULL, '2000', '-5.0892', '-42.8034');
+
+----
+
+INSERT INTO "PESSOA_ENDERECO" ("CODIGO", "ENDERECO_ID", "PESSOA_ID")
+VALUES
+('PE001', 1, 1),
+('PE001', 2, 2),
+('PE001', 3, 3),
+('PE001', 4, 4),
+('PE001', 5, 5),
+('PE001', 6, 6),
+('PE001', 7, 7),
+('PE001', 8, 8),
+('PE001', 9, 9),
+('PE001', 10, 10),
+('PE001', 11, 11),
+('PE001', 12, 12),
+('PE001', 13, 13),
+('PE001', 14, 14),
+('PE001', 15, 15),
+('PE001', 16, 16),
+('PE001', 17, 17),
+('PE001', 18, 18),
+('PE001', 19, 19),
+('PE001', 20, 20);
+
+---
+
+INSERT INTO dbo.EMPRESA (CODIGO, RAZAO_SOCIAL, FANTASIA, TIPO_DOCUMENTO, DOCUMENTO, UPDATE)
+VALUES
+('EMP001', 'Empresa A Ltda', 'A Comércio', 'CNPJ', '12345678000195', 1),
+('EMP002', 'Empresa B S/A', 'B Serviços', 'CNPJ', '23456789000196', 1),
+('EMP003', 'Empresa C e Cia', 'C Construções', 'CNPJ', '34567890000197', 1),
+('EMP004', 'D Indústria e Comércio', 'D Indústria', 'CNPJ', '45678901000198', 1),
+('EMP005', 'E Serviços Ltda', 'E Soluções', 'CNPJ', '56789012000199', 1),
+('EMP006', 'F Comércio de Produtos', 'F Produtos', 'CNPJ', '67890123000100', 1),
+('EMP007', 'G Indústria e Comércio', 'G Indústria', 'CNPJ', '78901234000101', 1),
+('EMP008', 'H Serviços e Consultoria', 'H Consultoria', 'CNPJ', '89012345000102', 1),
+('EMP009', 'I Comércio e Importação', 'I Importação', 'CNPJ', '90123456000103', 1),
+('EMP010', 'J Comércio e Serviços', 'J Comércio', 'CNPJ', '01234567000104', 1);
+
+----
+
+INSERT INTO dbo.ENDERECO (CODIGO, ENDERECO, BAIRRO, CIDADE, UF, CEP, COMPLEMENTO, NUMERO, LATITUDE, LONGITUDE)
+VALUES
+('E001', 'Avenida do Comércio', 'Centro', 'São Paulo', 'SP', '01001-000', 'Sala 1', '101', '-23.5505', '-46.6333'),
+('E002', 'Rua da Indústria', 'Bela Vista', 'Rio de Janeiro', 'RJ', '22001-000', NULL, '202', '-22.9711', '-43.1822'),
+('E003', 'Rua das Construções', 'Jardim', 'Belo Horizonte', 'MG', '30101-000', NULL, '303', '-19.9206', '-43.9377'),
+('E004', 'Praça da Indústria', 'Centro', 'Curitiba', 'PR', '80001-000', NULL, '404', '-25.4284', '-49.2733'),
+('E005', 'Avenida das Soluções', 'Pituba', 'Salvador', 'BA', '41811-000', 'Bloco A', '505', '-12.9711', '-38.5014'),
+('E006', 'Rua dos Produtos', 'Centro', 'Fortaleza', 'CE', '60101-000', NULL, '606', '-3.7172', '-38.5433'),
+('E007', 'Rua da Indústria', 'Moinhos de Vento', 'Porto Alegre', 'RS', '90001-000', NULL, '707', '-30.0277', '-51.2287'),
+('E008', 'Rua da Consultoria', 'Centro', 'Manaus', 'AM', '69001-000', NULL, '808', '-3.1342', '-60.0217'),
+('E009', 'Rua da Importação', 'Asa Sul', 'Brasília', 'DF', '70001-000', NULL, '909', '-15.7801', '-47.9292'),
+('E010', 'Rua do Comércio', 'Boa Viagem', 'Recife', 'PE', '51001-000', NULL, '1000', '-8.0722', '-34.8951');
+
+---
+
+INSERT INTO "EMPRESA_ENDERECO" ("CODIGO", "ENDERECO_ID", "ENDERECO_ID")
+VALUES
+('PE001', 1,  21),
+('PE001', 2,  22),
+('PE001', 3,  23),
+('PE001', 4,  24),
+('PE001', 5,  25),
+('PE001', 6,  26),
+('PE001', 7,  27),
+('PE001', 8,  28),
+('PE001', 9,  29),
+('PE001', 10, 30),
+
+---
+
+INSERT INTO dbo.PESSOA_EMPRESA (CODIGO, PESSOA_ID, EMPRESA_ID, EXCLUIDO, DATE_CREATE, DATE_UPLOAD)
+VALUES
+('PE001', 1, 1),
+('PE002', 2, 1),
+('PE003', 3, 2),
+('PE004', 4, 2),
+('PE005', 5, 3),
+('PE006', 6, 3),
+('PE007', 7, 4),
+('PE008', 8, 4),
+('PE009', 9, 5),
+('PE010', 10, 5),
+('PE011', 11, 6),
+('PE012', 12, 7),
+('PE013', 13, 8),
+('PE014', 14, 9),
+('PE015', 15, 10);

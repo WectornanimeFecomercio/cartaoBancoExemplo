@@ -1,0 +1,68 @@
+[
+	{
+		"table": "ESTADO_CIVIL",
+		"fild": "DESCRICAO",
+		"values": [
+			"Solteiro(a)",
+			"Casado(a)",
+			"Viuvo(a)",
+			"Divorciado(a)",
+			"Separado(a)"
+		]
+	},
+	{
+		"table": "CONTATO_TIPO",
+		"fild": "TIPO",
+		"values": [
+			"EMAIL",
+			"TELEFONE",
+			"CELULAR"
+		]
+	},
+	{
+		"table": "TIPO",
+		"fild": "TIPO",
+		"values": [
+			"TITULAR",
+			"DEPENDENTE",
+			"REPRESENTANDE",
+			"AMIGO DO CARTÃO"
+		]
+	},
+	{
+		"table": "EMPRESA_PARCERIA",
+		"fild": "EMPRESA",
+		"values": [
+			"FECOMÉRCIO",
+			"SENAC",
+			"SESC",
+			"SINDCOM JABOATÃO",
+			"SINDILOJAS CARUARU"
+		]
+	},
+	{
+		"table": "GRAU_PARENTESCO",
+		"fild": "DESCRICAO",
+		"values": [
+			"CÔNJUGE/COMPANHEIRO(A)",
+			"FILHO(A)/ENTEADO(A)",
+			"MÃE/MADRASTA",
+			"PAI/PADRASTO"
+		]
+	},
+	{
+		"table": "SITUACAO",
+		"fild": "DESCRICAO",
+		"values": [
+			"AGUARDANDO PAGAMENTO",
+			"ATIVO",
+			"INATIVO",
+			"NÃO POSSUI INTERESSE",
+			"EXPIRADO"
+		]
+	}
+]
+
+
+
+

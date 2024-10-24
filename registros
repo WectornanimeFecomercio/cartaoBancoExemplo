@@ -52,25 +52,25 @@ VALUES
 INSERT INTO "PESSOA_ENDERECO" ("CODIGO", "ENDERECO_ID", "PESSOA_ID")
 VALUES
 ('PE001', 1, 1),
-('PE001', 2, 2),
-('PE001', 3, 3),
-('PE001', 4, 4),
-('PE001', 5, 5),
-('PE001', 6, 6),
-('PE001', 7, 7),
-('PE001', 8, 8),
-('PE001', 9, 9),
-('PE001', 10, 10),
-('PE001', 11, 11),
-('PE001', 12, 12),
-('PE001', 13, 13),
-('PE001', 14, 14),
-('PE001', 15, 15),
-('PE001', 16, 16),
-('PE001', 17, 17),
-('PE001', 18, 18),
-('PE001', 19, 19),
-('PE001', 20, 20);
+('PE002', 2, 2),
+('PE003', 3, 3),
+('PE004', 4, 4),
+('PE005', 5, 5),
+('PE006', 6, 6),
+('PE007', 7, 7),
+('PE008', 8, 8),
+('PE009', 9, 9),
+('PE010', 10, 10),
+('PE011', 11, 11),
+('PE012', 12, 12),
+('PE013', 13, 13),
+('PE014', 14, 14),
+('PE015', 15, 15),
+('PE016', 16, 16),
+('PE017', 17, 17),
+('PE018', 18, 18),
+('PE019', 19, 19),
+('PE020', 20, 20);
 
 ---
 
@@ -91,16 +91,16 @@ VALUES
 
 INSERT INTO dbo.ENDERECO (CODIGO, ENDERECO, BAIRRO, CIDADE, UF, CEP, COMPLEMENTO, NUMERO, LATITUDE, LONGITUDE)
 VALUES
-('E001', 'Avenida do Comércio', 'Centro', 'São Paulo', 'SP', '01001-000', 'Sala 1', '101', '-23.5505', '-46.6333'),
-('E002', 'Rua da Indústria', 'Bela Vista', 'Rio de Janeiro', 'RJ', '22001-000', NULL, '202', '-22.9711', '-43.1822'),
-('E003', 'Rua das Construções', 'Jardim', 'Belo Horizonte', 'MG', '30101-000', NULL, '303', '-19.9206', '-43.9377'),
-('E004', 'Praça da Indústria', 'Centro', 'Curitiba', 'PR', '80001-000', NULL, '404', '-25.4284', '-49.2733'),
-('E005', 'Avenida das Soluções', 'Pituba', 'Salvador', 'BA', '41811-000', 'Bloco A', '505', '-12.9711', '-38.5014'),
-('E006', 'Rua dos Produtos', 'Centro', 'Fortaleza', 'CE', '60101-000', NULL, '606', '-3.7172', '-38.5433'),
-('E007', 'Rua da Indústria', 'Moinhos de Vento', 'Porto Alegre', 'RS', '90001-000', NULL, '707', '-30.0277', '-51.2287'),
-('E008', 'Rua da Consultoria', 'Centro', 'Manaus', 'AM', '69001-000', NULL, '808', '-3.1342', '-60.0217'),
-('E009', 'Rua da Importação', 'Asa Sul', 'Brasília', 'DF', '70001-000', NULL, '909', '-15.7801', '-47.9292'),
-('E010', 'Rua do Comércio', 'Boa Viagem', 'Recife', 'PE', '51001-000', NULL, '1000', '-8.0722', '-34.8951');
+('E021', 'Avenida do Comércio', 'Centro', 'São Paulo', 'SP', '01001-000', 'Sala 1', '101', '-23.5505', '-46.6333'),
+('E022', 'Rua da Indústria', 'Bela Vista', 'Rio de Janeiro', 'RJ', '22001-000', NULL, '202', '-22.9711', '-43.1822'),
+('E023', 'Rua das Construções', 'Jardim', 'Belo Horizonte', 'MG', '30101-000', NULL, '303', '-19.9206', '-43.9377'),
+('E024', 'Praça da Indústria', 'Centro', 'Curitiba', 'PR', '80001-000', NULL, '404', '-25.4284', '-49.2733'),
+('E025', 'Avenida das Soluções', 'Pituba', 'Salvador', 'BA', '41811-000', 'Bloco A', '505', '-12.9711', '-38.5014'),
+('E026', 'Rua dos Produtos', 'Centro', 'Fortaleza', 'CE', '60101-000', NULL, '606', '-3.7172', '-38.5433'),
+('E027', 'Rua da Indústria', 'Moinhos de Vento', 'Porto Alegre', 'RS', '90001-000', NULL, '707', '-30.0277', '-51.2287'),
+('E028', 'Rua da Consultoria', 'Centro', 'Manaus', 'AM', '69001-000', NULL, '808', '-3.1342', '-60.0217'),
+('E029', 'Rua da Importação', 'Asa Sul', 'Brasília', 'DF', '70001-000', NULL, '909', '-15.7801', '-47.9292'),
+('E030', 'Rua do Comércio', 'Boa Viagem', 'Recife', 'PE', '51001-000', NULL, '1000', '-8.0722', '-34.8951');
 
 ---
 
@@ -119,7 +119,7 @@ VALUES
 
 ---
 
-INSERT INTO dbo.PESSOA_EMPRESA (CODIGO, PESSOA_ID, EMPRESA_ID, EXCLUIDO, DATE_CREATE, DATE_UPLOAD)
+INSERT INTO dbo.PESSOA_EMPRESA (CODIGO, PESSOA_ID, EMPRESA_ID)
 VALUES
 ('PE001', 1, 1),
 ('PE002', 2, 1),
@@ -136,3 +136,102 @@ VALUES
 ('PE013', 13, 8),
 ('PE014', 14, 9),
 ('PE015', 15, 10);
+
+---
+
+INSERT INTO PESSOA_TIPO ("CODIGO", "PESSOA_ID", "TIPO_ID")
+VALUES
+('PT001', 1, 1),
+('PT002', 2, 2),
+('PT003', 3, 1),
+('PT004', 4, 2),
+('PT005', 5, 1),
+('PT006', 6, 2),
+('PT007', 7, 1),
+('PT008', 8, 2),
+('PT009', 9, 1),
+('PT010', 10, 2),
+('PT011', 11, 1),
+('PT012', 12, 1),
+('PT013', 13, 1),
+('PT014', 14, 1),
+('PT015', 15, 1),
+('PT016', 1, 4),
+('PT017', 2, 4),
+('PT018', 15, 4),
+('PT019', 16, 4),
+('PT020', 17, 4),
+('PT021', 18, 4),
+('PT022', 19, 4),
+('PT023', 20, 4);
+
+---
+
+INSERT INTO "AMIGO_CODIGO" ("CODIGO", "PESSOA_ID", "CODIGO_AMIGO")
+VALUES
+('CD001', 1, 'AMG-PE001'),
+('CD002', 2, 'AMG-PE002'),
+('CD003', 15, 'AMG-PE015'),
+('CD004', 16, 'AMG-PE016'),
+('CD005', 17, 'AMG-PE017'),
+('CD006', 18, 'AMG-PE018'),
+('CD007', 19, 'AMG-PE019'),
+('CD008', 20, 'AMG-PE020');
+
+---
+
+INSERT INTO "ASSOCIADO" ("CODIGO", "RENOVACAO", "VALIDADE")
+VALUES
+('AS001', 0, '2025-01-01'),
+('AS002', 0, '2025-01-01'),
+('AS003', 0, '2025-01-01'),
+('AS004', 0, '2025-01-01'),
+('AS005', 0, '2025-01-01'),
+('AS006', 0, '2025-01-01'),
+('AS007', 0, '2025-01-01'),
+('AS008', 0, '2025-01-01'),
+('AS009', 0, '2025-01-01'),
+('AS010', 0, '2025-01-01'),
+('AS011', 0, '2025-01-01'),
+('AS012', 0, '2025-01-01'),
+('AS013', 0, '2025-01-01'),
+('AS014', 0, '2025-01-01'),
+('AS015', 0, '2025-01-01');
+
+---
+
+INSERT INTO "PESSOA_ASSOCIADO" ("CODIGO", "ASSOCIADO_ID", "PESSOA_ID")
+VALUES
+('PA001', 1, 1),
+('PA002', 2, 2),
+('PA003', 3, 3),
+('PA004', 4, 4),
+('PA005', 5, 5),
+('PA006', 6, 6),
+('PA007', 7, 7),
+('PA008', 8, 8),
+('PA009', 9, 9),
+('PA010', 10, 10),
+('PA011', 11, 11),
+('PA012', 12, 12),
+('PA013', 13, 13),
+('PA014', 14, 14),
+('PA015', 15, 15);
+
+---
+
+INSERT INTO "ASSOCIADO_CODIGO" ("CODIGO", "ASSOCIADO_ID", "AMIGO_CODIGO_ID")
+VALUES
+('AC001', 1, 5),
+('AC002', 2, 5),
+('AC003', 5, 1),
+('AC004', 6, 1),
+('AC005', 7, 2),
+('AC006', 8, 2),
+('AC007', 9, 3),
+('AC008', 10, 3),
+('AC009', 11, 4),
+('AC010', 12, 4),
+('AC011', 13, 6),
+('AC012', 14, 7),
+('AC013', 15, 7);
